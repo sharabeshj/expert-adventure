@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'h$+vnq$0vbr(e!0ce1(&6dm=rav$=9q1lao3drs9zo$5!qt4r^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['whispering-reaches-62612.herokuapp.com']
+ALLOWED_HOSTS = ['whispering-reaches-62612.herokuapp.com','127.0.0.1']
 
 
 # Application definition
