@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'h$+vnq$0vbr(e!0ce1(&6dm=rav$=9q1lao3drs9zo$5!qt4r^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['whispering-reaches-62612.herokuapp.com']
 
 
 # Application definition
@@ -85,6 +85,10 @@ DATABASES = {
         'PORT' : '',        
     }
 }
+
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
